@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<section style="position: fixed; z-index: 99; width: 100%; 	 display: block; text-align: center;">
+<form action="/allmanga" style="width: 100%;"><input placeholder="search" class="search" type="text" name="search"></form>
+<label class="seeall" onclick="location.href='/allmanga'">See All</label>
+</section>
+
+<section id="allmanga" class="allmanga"></section>
+  <img class="backbtn" src="/home.png" onclick="location.href='/'"> 
+  <div class="tbar"><label class="lbl" id="labl">All Manga</label></div> 
+ 
+<script type="text/javascript" src="/js/error.js"></script> 
+<script type="text/javascript" src="/js/manga/allmanga.js"></script> 
+
+{{end}}
