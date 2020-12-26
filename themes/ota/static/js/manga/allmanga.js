@@ -52,7 +52,7 @@ function show2(data) {
 
     <div class="allmg" onclick="location.href='/manga/?manga_id=${r.manga_id}'">
 			<img class="mgthumb" src="${r.manga_cover}" >
-			<h3>${r.manga_title}</h3>
+			<h3 class="thumbtitle">${r.manga_title}</h3>
 		
 
 		</div>
