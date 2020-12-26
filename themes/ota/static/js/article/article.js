@@ -10,9 +10,9 @@ const queryString = window.location.search;
 async function showArt(id){
   try {
    const cont_api_url = 
-  "http://localhost/api/article/readone.php?art_id="+id;
+  "http://creatordesk.otamyanmar.com/article/readone.php?art_id="+id;
   const cover_api_url = 
-  "http://localhost/api/article/readinfo.php?art_id="+id;
+  "http://creatordesk.otamyanmar.com/article/readinfo.php?art_id="+id;
   
   
 

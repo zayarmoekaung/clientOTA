@@ -12,9 +12,9 @@ const queryString = window.location.search;
 async function showChpt(id){
   try {
    const cont_api_url = 
-  "http://localhost/api/manga/read_mgcontent.php?chpt_id="+id;
+  "http://creatordesk.otamyanmar.com/manga/read_mgcontent.php?chpt_id="+id;
   
-  
+
 
    const response4 = await  fetch(cont_api_url);
     

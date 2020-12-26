@@ -1,5 +1,5 @@
-const manga_api_url 	= "http://localhost/api/article/read.php"; 
-const search			= "http://localhost/api/article/search.php";
+const manga_api_url 	= "http://creatordesk.otamyanmar.com/article/read.php"; 
+const search			= "http://creatordesk.otamyanmar.com/article/search.php";
 
 
 const queryString = window.location.search;

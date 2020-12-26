@@ -1,5 +1,5 @@
-const api_url   = "http://localhost/api/lightnovel/read.php"; 
-const search      = "http://localhost/api/lightnovel/search.php";
+const api_url   = "http://creatordesk.otamyanmar.com/lightnovel/read.php"; 
+const search      = "http://creatordesk.otamyanmar.com/lightnovel/search.php";
 
 
 const queryString = window.location.search;
