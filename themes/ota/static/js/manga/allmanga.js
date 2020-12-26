@@ -50,7 +50,7 @@ function show2(data) {
   for (let r of data.records) { 
     manga += `
 
-    <div class="allmg" onclick="location.href='/manga/?manga_id=${r.manga_id}'">
+    <div class="mg" onclick="location.href='/manga/?manga_id=${r.manga_id}'">
 			<img class="mgthumb" src="${r.manga_cover}" >
 			<h3 class="thumbtitle">${r.manga_title}</h3>
 		
