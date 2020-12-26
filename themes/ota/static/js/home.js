@@ -1,8 +1,8 @@
 	// api url 
 const manga_api_url = 
-  "http://creatordesk.otamyanmar.com/manga/readtip.php"; 
-const art_api_url = "http://creatordesk.otamyanmar.com/article/readtip.php";  
-const nv_api_url ="http://creatordesk.otamyanmar.com/lightnovel/readtip.php";
+  "https://creatordesk.otamyanmar.com/manga/readtip.php"; 
+const art_api_url = "https://creatordesk.otamyanmar.com/article/readtip.php";  
+const nv_api_url ="https://creatordesk.otamyanmar.com/lightnovel/readtip.php";
 // Defining async function 
 async function getapi(url) { 
   

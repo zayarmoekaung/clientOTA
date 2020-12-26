@@ -12,7 +12,7 @@ const queryString = window.location.search;
 async function showChpt(id){
   try {
    const cont_api_url = 
-  "http://creatordesk.otamyanmar.com/manga/read_mgcontent.php?chpt_id="+id;
+  "https://creatordesk.otamyanmar.com/manga/read_mgcontent.php?chpt_id="+id;
   
 
 

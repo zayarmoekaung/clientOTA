@@ -11,7 +11,7 @@ const queryString = window.location.search;
 async function shownvChpt(id){
   try {
    const cont_api_url = 
-  "http://creatordesk.otamyanmar.com/lightnovel/readnvcontent.php?chpt_id="+id;
+  "https://creatordesk.otamyanmar.com/lightnovel/readnvcontent.php?chpt_id="+id;
   
   
 

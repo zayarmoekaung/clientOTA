@@ -1,5 +1,5 @@
-const manga_api_url 	= "http://creatordesk.otamyanmar.com/manga/read.php"; 
-const search			= "http://creatordesk.otamyanmar.com/manga/search.php";
+const manga_api_url 	= "https://creatordesk.otamyanmar.com/manga/read.php"; 
+const search			= "https://creatordesk.otamyanmar.com/manga/search.php";
 
 
 const queryString = window.location.search;

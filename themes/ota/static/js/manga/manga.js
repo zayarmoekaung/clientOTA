@@ -15,10 +15,10 @@ const queryString = window.location.search;
 
 async function mf(id){
   const mg1_api_url = 
-  "http://creatordesk.otamyanmar.com/manga/read_one.php?manga_id="+id;
+  "https://creatordesk.otamyanmar.com/manga/read_one.php?manga_id="+id;
   
   const chpt_api_url = 
-  'http://creatordesk.otamyanmar.com/manga/read_Chpt.php?manga_id='+id;
+  'https://creatordesk.otamyanmar.com/manga/read_Chpt.php?manga_id='+id;
 
    const response2 = await  fetch(mg1_api_url);
    const response3 = await  fetch(chpt_api_url); 
