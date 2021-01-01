@@ -27,7 +27,7 @@ async function showChpt(id){
    
   } 
   let chp = `
-  <img class="backbtn" src="/rback.png" onclick="history.back()">  
+  <img class="backbtn" src="/back.png" onclick="history.back()">  
   `;
   for (let r of data.cont) { 
     chp += `
@@ -39,7 +39,7 @@ async function showChpt(id){
 `; 
 
   }   
-
+   
    
   document.getElementById("mgchpt").innerHTML = chp; 
 }

@@ -35,7 +35,8 @@ async function mf(id){
      document.querySelector('meta[name="img"]').setAttribute("content", data.manga_cover);
 
     let mg=`
-    <img class="backbtn" src="/back.png" onclick="history.back()">  
+    <img class="backbtn" src="/manga.webp" onclick="location.href='https://www.otamyanmar.com/allmanga'">  
+    <img class="backbtn2" src="/home.png" onclick="location.href='/'">
     <div class="singel">
   <img src="${data.manga_cover}" class="mgcover"> 
 <div class="blur">
