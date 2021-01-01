@@ -30,7 +30,9 @@ async function mf(id){
 
 
 	try {
- 
+    document.querySelector('meta[name="title"]').setAttribute("content", data.manga_title); 
+     document.querySelector('meta[name="disp"]').setAttribute("content", data.manga_disp);
+     document.querySelector('meta[name="img"]').setAttribute("content", data.manga_cover);
 
     let mg=`
     <img class="backbtn" src="/back.png" onclick="history.back()">  
