@@ -33,7 +33,7 @@ async function mf(id){
  
 
     let mg=`
-    <img class="backbtn" src="/rback.png" onclick="history.back()">  
+    <img class="backbtn" src="/back.png" onclick="history.back()">  
     <div class="singel">
   <img src="${data.manga_cover}" class="mgcover"> 
 <div class="blur">
@@ -50,13 +50,15 @@ async function mf(id){
       <img src="${r.chpt_thumb}" class="thumb">
       <h3 class="chpsum">${r.chpt_sum}</h3>
     </div>
+    <hr>
 
 `; 
-
+ 
   }   
 
 
   document.getElementById("manga").innerHTML = mg; 
+
   }
   catch(err){
 

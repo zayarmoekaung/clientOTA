@@ -225,10 +225,12 @@ opacity: 0.5;
 	width: 100%;
 	display: inline-block;
 	border-color: #000000;
+	background-color: #FFFFFF;
 	border-width: 2px;
 	position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
+    position: sticky;
+  	top: 0px;
+ 
 
 }
 .thumb{
@@ -333,6 +335,8 @@ opacity: 0.5;
 	color: #FFFFFF;
 	justify-content: center;
 	display: block;
+	position: relative;
+	overflow: hidden;
 	padding: 10px;
 
 }
@@ -345,6 +349,8 @@ opacity: 0.5;
 	margin-right: auto;
 	margin-left: auto;
 	object-fit: cover;
+	position: relative;
+	overflow: hidden;
 }
 .fbox{
 	text-align: center;
