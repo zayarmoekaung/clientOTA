@@ -12,8 +12,8 @@ function pop(text){
    
   `;
 
-document.getElementById('mask').style.display = 'block'; 
-document.getElementById("mask").innerHTML = bb;  
+
+ 
 
 
 }

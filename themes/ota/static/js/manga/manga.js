@@ -1,3 +1,4 @@
+
 const queryString = window.location.search;
   console.log(queryString);
   // ?product=shirt&color=blue&newuser&size=m
@@ -67,4 +68,7 @@ async function mf(id){
 
   }
 
+}
+if('scrollRestoration' in history){
+history.scrollRestoration='auto'
 }
