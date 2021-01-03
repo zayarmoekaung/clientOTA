@@ -3,8 +3,12 @@ const queryString = window.location.search;
   // ?product=shirt&color=blue&newuser&size=m
   const urlParams = new URLSearchParams(queryString);
   const id = urlParams.get('chpt_id');
+   let next = `
+l
+  `;
   showChpt(id);
-  showNext(id);
+   showNext(id);
+  showPrv(id); 
 
 
 
@@ -42,7 +46,8 @@ async function showChpt(id){
   }   
    
    
-  document.getElementById("mgchpt").innerHTML = chp; 
+  document.getElementById("mgchpt").innerHTML = chp;
+  
 }
 catch(err) {
  pop("Manga ရဲ့ content တွေမထည့်ရသေးပါ")
@@ -50,12 +55,12 @@ catch(err) {
    
 }
 async function showNext(id){
-  try {
+
    const Next_url = 
   "https://creatordesk.otamyanmar.com/manga/getnext.php?ch_id="+id;
   
 
-
+   console.log("touch");
    const responsen = await  fetch(Next_url);
     
   
@@ -66,18 +71,49 @@ async function showNext(id){
   if (responsen) { 
   
   } 
-  let next = `
-<img class="backbtn" src="/back.png" onclick="location.href='/manga/?manga_id=${datan.manga_id}'">
-  `;
+  console.log(datan.chpt_id);
   if (datan.chpt_id !=undefined ) {
-  next += `
-
- <h1>Next Chapter</h1>  
+    console.log(datan.chpt_id);
+    console.log(next);
+  next += `<h1>Next Chapter</h1>  
   <div class="chp" onclick="location.href='/mangachpt/?chpt_id=${datan.chpt_id}'">
       <img src="${datan.chpt_thumb}" class="thumb">
       <h3 class="chpsum">${datan.chpt_sum}</h3>
     </div>
     <hr>
+ <img id="nx" class="backbtn" src="/nx.png" onclick="location.href='/mangachpt/?chpt_id=${datan.chpt_id}'">
+  `;
+   console.log(next);
+ document.getElementById("next").innerHTML = next; 
+  }
+next += `<img class="backbtn2" src="/cls.png" onclick="location.href='/manga/?manga_id=${datan.manga_id}'">`;
+ console.log(next);
+}
+
+   
+
+async function showPrv(id){
+  try {
+   const Prv_url = 
+  "https://creatordesk.otamyanmar.com/manga/getprev.php?ch_id="+id;
+  
+
+
+   const responsep = await  fetch(Prv_url);
+    
+  
+  // Storing data in form of JSON 
+  var datap = await responsep.json();
+
+   
+  if (responsep) { 
+  
+  } 
+
+  if (datap.chpt_id !=undefined ) {
+ next += `
+ <img class="backbtn3" src="/bck.png" onclick="location.href='/mangachpt/?chpt_id=${datap.chpt_id}'">
+ 
   `;
  
 
