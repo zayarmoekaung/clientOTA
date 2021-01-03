@@ -4,7 +4,7 @@ const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const id = urlParams.get('chpt_id');
    let next = `
-l
+
   `;
   showChpt(id);
    showNext(id);
@@ -55,7 +55,7 @@ catch(err) {
    
 }
 async function showNext(id){
-
+  try {
    const Next_url = 
   "https://creatordesk.otamyanmar.com/manga/getnext.php?ch_id="+id;
   
@@ -83,15 +83,17 @@ async function showNext(id){
     <hr>
  <img id="nx" class="backbtn" src="/nx.png" onclick="location.href='/mangachpt/?chpt_id=${datan.chpt_id}'">
   `;
-   console.log(next);
  document.getElementById("next").innerHTML = next; 
+
   }
 next += `<img class="backbtn2" src="/cls.png" onclick="location.href='/manga/?manga_id=${datan.manga_id}'">`;
- console.log(next);
+
 }
-
+catch(err) {
+console.log(err);
+}
    
-
+}
 async function showPrv(id){
   try {
    const Prv_url = 
