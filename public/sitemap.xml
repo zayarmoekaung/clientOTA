@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/allarticles/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/alllightnovels/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/allmanga/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/article/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/lightnovel/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/lightnovelchpt/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/manga/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/mangachpt/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/profile/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/stuff/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+  </url>
+  
+</urlset>

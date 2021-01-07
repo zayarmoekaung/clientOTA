@@ -1,0 +1,70 @@
+{{ define "main" }}
+<link rel="stylesheet" href="/css/drama.css" media="screen">
+<div id="vid">
+	
+</div>
+<div>
+<label  class="Episodes">All Episodes</label>
+<div id="episodes" class="eplist">
+	
+</div>
+</div>	
+<script type="text/javascript">
+const queryString = window.location.search;
+  console.log(queryString);
+  // ?product=shirt&color=blue&newuser&size=m
+  const urlParams = new URLSearchParams(queryString);
+  const key = urlParams.get('s');
+   const dkey = urlParams.get('d');
+   
+   
+  if (key !== null) {video()}
+
+  function video(){
+  	 const Episode = "https://creatordesk.otamyanmar.com/drama/readoneEpisode.php/?ep_id="+key;
+  	  const Episodes = "https://creatordesk.otamyanmar.com/drama/readEpisode.php/?drama_id="+dkey;
+  	 getapi(Episode , Episodes);
+  }	
+  async function getapi(url1,url2) { 
+  
+  // Storing response 
+  const response = await fetch(url1); 
+    const response2 = await fetch(url2); 
+
+  // Storing data in form of JSON 
+  var data = await response.json();
+   var episode = await response2.json(); 
+; 
+  console.log(data); 
+  if (response) { 
+     
+  } 
+  showVideo(data,episode); 
+}
+function showVideo(data,episode){
+	let ep= ``;
+	let video=`
+<label class="eptitle">${data.ep_title}</label>
+<video width="100%" controls>
+  <source src="${data.vid_url}" type="video/mp4">
+  <source src="${data.vid_url}" type="video/ogg">
+</video>
+
+  
+
+</iframe>
+<a cl style="display:block; margin:10px;"  href="${data.dw_url}">Download</a>
+
+	`;
+for (let r of episode.episodes) { 
+ep += `
+<a style="display:block; margin:10px;" href="/watch/?s=${r.ep_id}&d=${data.drama_id}" >${r.ep_title}</a>
+`;
+
+}	
+ document.getElementById("vid").innerHTML = video;	
+ document.getElementById("episodes").innerHTML = ep;	
+}  	
+
+</script>
+{{end}}

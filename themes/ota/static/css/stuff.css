@@ -413,3 +413,83 @@ a:hover {
 .flbl{
 	margin: 5px;
 }
+.allseries{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 70px;
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: block;
+}
+.serie{
+
+	height: 180px;
+	width: 100px;
+	display: inline-block;
+	position: relative;
+	margin: 10px;
+	color: #ffffff;
+	cursor: pointer;
+	
+}
+.serithumb{
+	width:120px;
+	height: 180px;
+	object-fit: cover;
+	position: absolute;
+
+}
+.title{
+	width: 100%;
+	height: auto;
+	font-size: 15px;
+	position: absolute;
+	bottom: 30px;
+}
+.infobar{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 70px;
+	width: 100%;
+	height: 40vh;
+	position: relative;
+	display: block;
+}
+.cover{
+	width: 23vh;
+	height: 30vh;
+	margin: auto;
+	position: absolute;
+	display: inline-block;
+
+}
+.syno{
+	width: 40%;
+	height: 100%;
+	margin: auto;
+	display: inline-block;
+}
+.Episodes{
+	display: block;
+	width: 100%;
+	font-size: 20px;
+	margin: auto;
+
+}
+.eplist{
+	width: 100%;
+	height: 30vh;
+	overflow: scroll;
+	padding: 20px;
+	position: relative;
+	
+}
+.eptitle{
+	width: 100%;
+	height: auto;
+	display: block;
+	position: relative;
+	margin: 10px;
+	color: #00FFFF;
+	}
