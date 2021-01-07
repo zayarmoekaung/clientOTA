@@ -1,6 +1,6 @@
 ---
 title: "Anime"
 date: 2021-01-07T13:53:03+06:30
-draft: true
+
 ---
 
