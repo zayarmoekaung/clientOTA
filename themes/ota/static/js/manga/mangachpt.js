@@ -87,6 +87,8 @@ async function showNext(id){
 
   }
 next += `<img class="backbtn2" src="/cls.png" onclick="location.href='/manga/?manga_id=${datan.manga_id}'">`;
+ document.getElementById("next").innerHTML = next; 
+    
 
 }
 catch(err) {
