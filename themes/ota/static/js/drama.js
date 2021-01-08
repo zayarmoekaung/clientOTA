@@ -68,33 +68,10 @@ let drama=``;
 
  }
 
-const ad2 = "https://creator.n1channel.org/ad/read.php";
-getapiad(ad2); 
-async function getapiad(url) { 
-  
-  // Storing response 
-  const response = await fetch(url); 
-  
-  // Storing data in form of JSON 
-  var adpic = await response.json(); 
-  
-  if (response) { 
-     
-  } 
-  showAd(adpic); 
-} 
-function showAd(ad){
-
-for( let r of ad.records){
-if (r.ad_placement == 3) {
-document.getElementById("hpad3").src = r.url;   
-}
-
-} 
-}
 
 
-const Episodes = "https://creator.n1channel.org/drama/readEpisode.php/?drama_id="+dramadd ;
+
+const Episodes = "https://creatordesk.otamyanmar.com/drama/readEpisode.php/?drama_id="+dramadd ;
  
   getep( Episodes);
   async function getep( Episodes) { 
