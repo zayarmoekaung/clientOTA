@@ -264,7 +264,8 @@ a:hover {
   font-size: 25px;
   padding: 8px 12px;
   position: absolute;
-  top: : 8px;
+  top:  8px;
+  bottom: 80%;
   width: 80%;
   text-align: left;
 }

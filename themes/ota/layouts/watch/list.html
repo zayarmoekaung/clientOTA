@@ -58,7 +58,7 @@ function showVideo(data,episode){
 	`;
 for (let r of episode.episodes) { 
 ep += `
-<a style="display:block; margin:10px;" href="/watch/?s=${r.ep_id}&d=${data.drama_id}" >${r.ep_title}</a>
+<a style="display:block; margin:10px; width: 100px; overflow:hidden; position:relative" href="/watch/?s=${r.ep_id}&d=${data.drama_id}" >${r.ep_title}</a>
 `;
 
 }	
