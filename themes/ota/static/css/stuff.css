@@ -479,8 +479,9 @@ a:hover {
 }
 .eplist{
 	width: 100%;
-	height: 30vh;
-	overflow: scroll;
+	min-height: 30vh;
+	max-height: auto;
+	overflow: hidden;
 	padding: 20px;
 	position: relative;
 	
