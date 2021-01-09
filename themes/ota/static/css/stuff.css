@@ -429,7 +429,7 @@ a:hover {
 	width: 100px;
 	display: inline-block;
 	position: relative;
-	margin: 10px;
+	margin: 20px;
 	color: #ffffff;
 	cursor: pointer;
 	
@@ -439,6 +439,7 @@ a:hover {
 	height: 180px;
 	object-fit: cover;
 	position: absolute;
+	 border: 5px solid #EE82EE;
 
 }
 .title{
@@ -447,6 +448,7 @@ a:hover {
 	font-size: 15px;
 	position: absolute;
 	bottom: 30px;
+	-webkit-text-stroke: 0.5px black;
 }
 .infobar{
 	margin-left: auto;
