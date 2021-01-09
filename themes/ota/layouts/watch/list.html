@@ -61,7 +61,7 @@ function showVideo(data,episode){
 for (let r of episode.episodes) { 
 ep += `
  <img id="nx" class="backbtn" src="/bck.png" onclick="location.href='/anime/?id=${data.drama_id}'">
-<a style="display:block; margin:10px; width: 100px; overflow:hidden; position:relative" href="/watch/?s=${r.ep_id}&d=${data.drama_id}" >${r.ep_title}</a>
+<a style="display:block; margin:10px; width: 100%; overflow:hidden; position:relative" href="/watch/?s=${r.ep_id}&d=${data.drama_id}" >${r.ep_title}</a>
 `;
 
 }	
