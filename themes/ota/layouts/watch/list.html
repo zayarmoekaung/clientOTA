@@ -47,7 +47,7 @@ function showVideo(data,episode){
 	let ep= ``;
 	let video=`
 <label class="eptitle">${data.ep_title}</label>
-<video width="100%" controls>
+<video width="100%" poster="${data.drama_cover}" controls>
   <source src="${data.vid_url}" type="video/mp4">
   <source src="${data.vid_url}" type="video/ogg">
 </video>
@@ -55,7 +55,7 @@ function showVideo(data,episode){
   
 
 
-<a cl style="display:block; margin:10px;"  href="${data.dw_url}">Download</a>
+
 
 	`;
 for (let r of episode.episodes) { 

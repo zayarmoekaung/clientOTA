@@ -2973,3 +2973,8 @@ text_above_player{
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+video[poster]{
+height:100%;
+width:100%;
+object-fit: cover;
+}
