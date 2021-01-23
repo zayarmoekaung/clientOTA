@@ -5,7 +5,9 @@
 	
 </div>
 <div>
-<label  class="Episodes">All Episodes</label>
+ <div class="tbar2">  
+<label  class="lbl2">All Episodes</label>
+</div>
 <div id="episodes" class="eplist">
 	
 </div>
@@ -46,14 +48,15 @@ const queryString = window.location.search;
 function showVideo(data,episode){
 	let ep= ``;
 	let video=`
-<label class="eptitle">${data.ep_title}</label>
+  <div class="abar"><label class="animeep">${data.ep_title}</label></div>
+
 <video width="100%" poster="${data.drama_cover}" controls>
   <source src="${data.vid_url}" type="video/mp4">
   <source src="${data.vid_url}" type="video/ogg">
 </video>
 
   
-
+ 
 
 
 
