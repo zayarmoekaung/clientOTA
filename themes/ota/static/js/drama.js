@@ -87,7 +87,9 @@ showeplist(episode);
 
 
 function showeplist(episode){
-  let epi = `<label class="Episodes">All Episodes</label>`;
+  let epi = `<div  class="tbar2">  
+<label  class="lbl2">All Episodes</label>
+</div>`;
 for (let r of episode.episodes) { 
 epi += `
 <a style="display:block;" href="/watch/?s=${r.ep_id}&d=${dramadd}" >${r.ep_title}</a>

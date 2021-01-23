@@ -5,7 +5,7 @@
 	
 </div>
 <div>
- <div class="tbar2">  
+ <div  class="tbar2">  
 <label  class="lbl2">All Episodes</label>
 </div>
 <div id="episodes" class="eplist">
@@ -48,9 +48,9 @@ const queryString = window.location.search;
 function showVideo(data,episode){
 	let ep= ``;
 	let video=`
-  <div class="abar"><label class="animeep">${data.ep_title}</label></div>
+  <div id="titlebox" class="abar"><label class="animeep">${data.ep_title}</label></div>
 
-<video width="100%" poster="${data.drama_cover}" controls>
+<video id="anime" width="100%" poster="${data.drama_cover}" onplay="nowpaly();" onpause="nowpause();" controls>
   <source src="${data.vid_url}" type="video/mp4">
   <source src="${data.vid_url}" type="video/ogg">
 </video>
@@ -72,5 +72,11 @@ ep += `
  document.getElementById("episodes").innerHTML = ep;	
 }  	
 
+ function nowpaly() {
+    document.getElementById("titlebox").style.display = "none"; 
+}
+function nowpause() {
+    document.getElementById("titlebox").style.display = "block"; 
+}
 </script>
 {{end}}
