@@ -28,14 +28,9 @@ async function shownvChpt(id){
   `;
   for (let r of data.cont) { 
  
-    if (r.nvcon_type=="pic"){
-     chp += `<img src="${r.nvcon_body}" class="cont">`; 
- }
- if (r.nvcon_type=="text") {
+   
   chp += `<pre class="nvpara">${html_entity_decode(r.nvcon_body)}</pre>`; 
- } if (r.nvcon_type=="title") {
-  chp += `<div class="nvtt"><h1 class="nvtitle">${r.nvcon_body}</h1></div>`; 
- }
+ 
 
   }   
 
