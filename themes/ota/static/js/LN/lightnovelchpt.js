@@ -29,7 +29,7 @@ async function shownvChpt(id){
   for (let r of data.cont) { 
  
    
-  chp += `<pre class="nvpara">${html_entity_decode(r.nvcon_body)}</pre>`; 
+  chp += `<pre class="nvpara">${r.nvcon_body}</pre>`; 
  
 
   }   
