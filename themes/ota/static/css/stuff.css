@@ -1,3 +1,34 @@
+@font-face {
+   font-family: 'MyWebfont';  /* Change this to whatever you like. */
+   src: url('mywebfont-regular.ttf') format('truetype');  /* The "regular" font resource. */
+   font-style: normal;  /* Associates values of "normal" with this resource. */
+   font-weight: normal;  /* As above for weight. */
+}
+
+@font-face {
+   font-family: 'MyWebfont';  /* Importantly, the same as in the above block; the family name. */
+   src: url('mywebfont-italic.ttf') format('truetype');
+   font-style: italic;  /* Associates values of "italic" with this resource. */
+   font-weight: normal;  /* ... It's not a bold-italic font style. */
+}
+
+body {
+   font-family:'MyWebfont', georgia, serif;  /* Provides a system font fallback. */
+}
+
+em {
+   font-style: italic;  /* If @font-face is supported, the italic Web font is used. If not, the italic Georgia style is lifted from the user's computer. Either way, a faux style is not allowed to creep in. */
+}
+p {
+   font-size:1em; /* Silence is golden; implicity 1em. */
+   line-height: 1.5;
+}
+p + p {
+   text-indent: 1.5em  /* I like to keep the indentation length equal to the line height. */
+}
+p + p {
+   text-indent: 1.5em  /* I like to keep the indentation length equal to the line height. */
+}
 .pbox{
 	width: 220px;
 	height: 300px;
@@ -305,7 +336,6 @@ a:hover {
 	margin: auto;
 	position: relative;
 	text-align: left;
-	text-indent: 50px;
   	text-align: justify;
     white-space: pre-wrap;
     word-wrap: break-word;         
