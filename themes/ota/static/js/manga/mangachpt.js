@@ -44,11 +44,7 @@ async function showChpt(id){
 `; 
 
   }   
- chp += `
-<div class="fb-comments"
- data-href="https://www.otamyanmar.com/mangachpt/?chpt_id=${id}" data-width="100%" data-numposts="5"></div>
- <div class="fb-like" data-href="https://www.otamyanmar.com/mangachpt/?chpt_id=${id}" data-width="100%" data-layout="button" data-action="like" data-size="small" data-share="true"></div>
- `;  
+ 
    
   document.getElementById("mgchpt").innerHTML = chp;
   
