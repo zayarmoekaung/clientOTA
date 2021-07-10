@@ -1,4 +1,4 @@
- {{ define "main" }}
+https://otamm.b-cdn.net/ {{ define "main" }}
  
 
 <style type="text/css">
@@ -180,54 +180,54 @@ list-style: none;
      var ledb = document.getElementById("redled");
   	 element.classList.add("glowgreen");
   	 ledb.classList.add("glowgreenb");
-  	 ledb.src = "/nuke_lunch_pad/numpad-lightgreen.png";	
+  	 ledb.src = "https://otamm.b-cdn.net/nuke_lunch_pad/numpad-lightgreen.png";	
      }
 	var element = document.getElementById("redled");
   	element.classList.add("glow");
   	setTimeout(function(){ element.classList.remove("glow"); }, 200);
 	
-    var audio = new Audio('/nuke_lunch_pad/beep-07a.mp3');
+    var audio = new Audio('https://otamm.b-cdn.net/nuke_lunch_pad/beep-07a.mp3');
 	audio.play();
 
 	switch (code){
 		case "1":
-				led = `<img class="led_digit" src="/nuke_lunch_pad/digit-1.png">`;
+				led = `<img class="led_digit" src="https://otamm.b-cdn.net/nuke_lunch_pad/digit-1.png">`;
 		        lunch_code += "1";
 		        break;
 		case "2":
-				led = `<img class="led_digit" src="/nuke_lunch_pad/digit-2.png">`;
+				led = `<img class="led_digit" src="https://otamm.b-cdn.net/nuke_lunch_pad/digit-2.png">`;
 		        lunch_code += "2";
 		        break;
 		case "3":
-				led = `<img class="led_digit" src="/nuke_lunch_pad/digit-3.png">`;
+				led = `<img class="led_digit" src="https://otamm.b-cdn.net/nuke_lunch_pad/digit-3.png">`;
 		        lunch_code += "3";
 		        break;
 		case "4":
-				led = `<img class="led_digit" src="/nuke_lunch_pad/digit-4.png">`;
+				led = `<img class="led_digit" src="https://otamm.b-cdn.net/nuke_lunch_pad/digit-4.png">`;
 		        lunch_code += "4";
 		        break;
 		case "5":
-				led = `<img class="led_digit" src="/nuke_lunch_pad/digit-5.png">`;
+				led = `<img class="led_digit" src="https://otamm.b-cdn.net/nuke_lunch_pad/digit-5.png">`;
 		        lunch_code += "5";
 		        break;
 		case "6":
-				led = `<img class="led_digit" src="/nuke_lunch_pad/digit-6.png">`;
+				led = `<img class="led_digit" src="https://otamm.b-cdn.net/nuke_lunch_pad/digit-6.png">`;
 				lunch_code += "6";
 				break;
 		case "7":
-				led = `<img class="led_digit" src="/nuke_lunch_pad/digit-7.png">`;
+				led = `<img class="led_digit" src="https://otamm.b-cdn.net/nuke_lunch_pad/digit-7.png">`;
 				lunch_code += "7";
 				break;
 		case "8":
-				led = `<img class="led_digit" src="/nuke_lunch_pad/digit-8.png">`;
+				led = `<img class="led_digit" src="https://otamm.b-cdn.net/nuke_lunch_pad/digit-8.png">`;
 				lunch_code += "8";
 				break;
 		case "9":
-				led = `<img class="led_digit" src="/nuke_lunch_pad/digit-9.png">`;
+				led = `<img class="led_digit" src="https://otamm.b-cdn.net/nuke_lunch_pad/digit-9.png">`;
 				lunch_code += "9";
 				break;
 		case "0":
-				led = `<img class="led_digit" src="/nuke_lunch_pad/digit-0.png">`;
+				led = `<img class="led_digit" src="https://otamm.b-cdn.net/nuke_lunch_pad/digit-0.png">`;
 				lunch_code += "0";
 				break;
 		case "r":
@@ -237,7 +237,7 @@ list-style: none;
   	 element.classList.remove("glowgreen");
   	 ledb.classList.remove("glowgreenb");
   	  ledb.classList.remove("glow");
-  	 ledb.src = "/nuke_lunch_pad/numpad-light.png";	
+  	 ledb.src = "https://otamm.b-cdn.net/nuke_lunch_pad/numpad-light.png";	
 			  lunch_code = "";
 			  code_count = 0;
 		 	  break;
@@ -251,7 +251,7 @@ list-style: none;
 	document.getElementById("led").innerHTML+=led;
 	}
 	function launch(){
-	var audio = new Audio('/nuke_lunch_pad/nuked.mp3');
+	var audio = new Audio('https://otamm.b-cdn.net/nuke_lunch_pad/nuked.mp3');
 	audio.play();
 	var url = 'https://nhentai.net/g/'+lunch_code;	
 	window.open(url);
@@ -261,7 +261,7 @@ list-style: none;
   	 element.classList.remove("glowgreen");
   	 ledb.classList.remove("glowgreenb");
   	  ledb.classList.remove("glow");
-  	 ledb.src = "/nuke_lunch_pad/numpad-light.png";	
+  	 ledb.src = "https://otamm.b-cdn.net/nuke_lunch_pad/numpad-light.png";	
 			  lunch_code = "";
 			  code_count = 0;
 	}
@@ -283,9 +283,9 @@ list-style: none;
 <div id="nuke">
 	<div class="numpadbase">
 		<div class="idic">
-			<img class="idled " id="redled" src="/nuke_lunch_pad/numpad-light.png">
-			<img class="idled"  src="/nuke_lunch_pad/numpad-spkon.png">
-			<img class="idled " id="redled" src="/logo.png">
+			<img class="idled " id="redled" src="https://otamm.b-cdn.net/nuke_lunch_pad/numpad-light.png">
+			<img class="idled"  src="https://otamm.b-cdn.net/nuke_lunch_pad/numpad-spkon.png">
+			<img class="idled " id="redled" src="https://otamm.b-cdn.net/logo.png">
 		</div>
 		<div class="numpadbase2">
 			<div id="container">  
@@ -295,19 +295,19 @@ list-style: none;
 
 
          </div></li>   
-        <li class="letter" id="1" onclick="nukecontrol(this)"><img src="/nuke_lunch_pad/numpad-1.png"></li>  
-        <li class="letter" id="2" onclick="nukecontrol(this)"><img src="/nuke_lunch_pad/numpad-2.png"></li>  
-        <li class="letter" id="3" onclick="nukecontrol(this)"><img src="/nuke_lunch_pad/numpad-3.png"></li> 
-        <li class="letter" id="r" onclick="nukecontrol(this)"><img src="/nuke_lunch_pad/numpad-R.png"></li> 
-        <li class="letter clearl" id="4" onclick="nukecontrol(this)"><img src="/nuke_lunch_pad/numpad-4.png"></li>  
-        <li class="letter" id="5" onclick="nukecontrol(this)"><img src="/nuke_lunch_pad/numpad-5.png"></li>  
-        <li class="letter" id="6" onclick="nukecontrol(this)"><img src="/nuke_lunch_pad/numpad-6.png"></li> 
-        <li class="letter" id="ok" onclick="nukecontrol(this)"><img src="/nuke_lunch_pad/numpad-OK.png"></li>
+        <li class="letter" id="1" onclick="nukecontrol(this)"><img src="https://otamm.b-cdn.net/nuke_lunch_pad/numpad-1.png"></li>  
+        <li class="letter" id="2" onclick="nukecontrol(this)"><img src="https://otamm.b-cdn.net/nuke_lunch_pad/numpad-2.png"></li>  
+        <li class="letter" id="3" onclick="nukecontrol(this)"><img src="https://otamm.b-cdn.net/nuke_lunch_pad/numpad-3.png"></li> 
+        <li class="letter" id="r" onclick="nukecontrol(this)"><img src="https://otamm.b-cdn.net/nuke_lunch_pad/numpad-R.png"></li> 
+        <li class="letter clearl" id="4" onclick="nukecontrol(this)"><img src="https://otamm.b-cdn.net/nuke_lunch_pad/numpad-4.png"></li>  
+        <li class="letter" id="5" onclick="nukecontrol(this)"><img src="https://otamm.b-cdn.net/nuke_lunch_pad/numpad-5.png"></li>  
+        <li class="letter" id="6" onclick="nukecontrol(this)"><img src="https://otamm.b-cdn.net/nuke_lunch_pad/numpad-6.png"></li> 
+        <li class="letter" id="ok" onclick="nukecontrol(this)"><img src="https://otamm.b-cdn.net/nuke_lunch_pad/numpad-OK.png"></li>
       
-        <li class="letter clearl" id="7" onclick="nukecontrol(this)"><img src="/nuke_lunch_pad/numpad-7.png"></li>  
-        <li class="letter " id="8" onclick="nukecontrol(this)"> <img src="/nuke_lunch_pad/numpad-8.png"></li>  
-        <li class="letter" id="9" onclick="nukecontrol(this)"><img src="/nuke_lunch_pad/numpad-9.png"></li>  
-        <li class="letter" id="0" onclick="nukecontrol(this)"><img src="/nuke_lunch_pad/numpad-0.png"></li>
+        <li class="letter clearl" id="7" onclick="nukecontrol(this)"><img src="https://otamm.b-cdn.net/nuke_lunch_pad/numpad-7.png"></li>  
+        <li class="letter " id="8" onclick="nukecontrol(this)"> <img src="https://otamm.b-cdn.net/nuke_lunch_pad/numpad-8.png"></li>  
+        <li class="letter" id="9" onclick="nukecontrol(this)"><img src="https://otamm.b-cdn.net/nuke_lunch_pad/numpad-9.png"></li>  
+        <li class="letter" id="0" onclick="nukecontrol(this)"><img src="https://otamm.b-cdn.net/nuke_lunch_pad/numpad-0.png"></li>
        
         
     </ul>  
